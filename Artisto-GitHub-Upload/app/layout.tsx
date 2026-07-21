@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(origin),
     title: "Artisto — Discover art made nearby",
     description: "Find handmade art, crafts, and creative goods from independent artists near you.",
-    icons: { icon: "/favicon.svg" },
+    icons: { icon: "/artisto-favicon.png" },
     openGraph: { title: "Artisto — Discover art made nearby", description: "Find handmade art, crafts, and creative goods from independent artists near you.", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Artisto — Discover art made nearby" }] },
     twitter: { card: "summary_large_image", title: "Artisto — Discover art made nearby", description: "Find handmade art, crafts, and creative goods from independent artists near you.", images: ["/og.png"] },
   };
