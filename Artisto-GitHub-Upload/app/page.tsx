@@ -66,7 +66,7 @@ function Icon({ name }: { name: "search" | "map" | "sell" | "user" }) {
 function App() {
   const supabase = useMemo(() => getSupabaseBrowserClient(), []);
   const [view, setView] = useState<View>("search");
-  const [listings, setListings] = useState(seedListings);
+  const [listings, setListings] = useState<Listing[]>([]);
   const [selected, setSelected] = useState<Listing | null>(null);
   const [saved, setSaved] = useState<Set<string>>(new Set());
   const [user, setUser] = useState<User | null>(null);
